@@ -1,6 +1,3 @@
-import seminar1.BottleOfWaterVendingMachine;
-import seminar1.BottleOfWatter;
-
 import java.util.ArrayList;
 
 public class Main {

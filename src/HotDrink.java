@@ -8,7 +8,7 @@ public class HotDrink extends BottleOfWatter {
         this.temperature = temperature;
 
     }
-   public double getTemperature() {
+    public double getTemperature() {
         return temperature;
     }
     public void setTemperature(int temperature) {

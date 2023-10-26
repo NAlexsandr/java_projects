@@ -1,5 +1,4 @@
 
-import seminar1.BottleOfWatter;
 import seminar1.Product;
 import seminar1.VendingMachine;
 
@@ -34,4 +33,3 @@ public class HotDrinkVendingMachine implements VendingMachine {
         this.hotDrink.add(hotDrink);
     }
 }
-
