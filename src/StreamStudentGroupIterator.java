@@ -3,11 +3,11 @@ import ru.gb.oseminar.data.StudentGroup;
 import java.util.Iterator;
 import java.util.List;
 
-public class StudentStreamGroupIterator implements Iterator<StudentGroup> {
+public class StreamStudentGroupIterator implements Iterator<StudentGroup> {
     private List<StudentGroup> stream;
     private int counter;
 
-    public StudentStreamGroupIterator(StreamStudentGroup1 stream) {
+    public StreamStudentGroupIterator(StreamStudentGroup stream) {
         this.stream = stream.getStreamStudentGroup();
         this.counter = 0;
     }

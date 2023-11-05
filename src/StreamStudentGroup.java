@@ -1,12 +1,11 @@
 import ru.gb.oseminar.data.StudentGroup;
-
 import java.util.List;
 
-public enum StreamStudentGroup1 implements Iterable<StudentGroup>{
+public class StreamStudentGroup implements Iterable<StudentGroup> {
     ;
     private List<StudentGroup> StreamStudentGroup;
 
-    StreamStudentGroup1(List<StudentGroup> streamStudentGroup) {
+    StreamStudentGroup(List<StudentGroup> streamStudentGroup) {
         this.StreamStudentGroup = streamStudentGroup;
     }
 
@@ -15,9 +14,9 @@ public enum StreamStudentGroup1 implements Iterable<StudentGroup>{
     }
 
     public void setStreamStudentGroup(List<StudentGroup> streamStudentGroup) {
-        StreamStudentGroup = streamStudentGroup;
+        this.StreamStudentGroup = streamStudentGroup;
     }
 
     @Override
-    public StudentStreamGroupIterator iterator() {return new StudentStreamGroupIterator(this);}
+    public StreamStudentGroupIterator iterator() {return new StreamStudentGroupIterator(this);}
 }
