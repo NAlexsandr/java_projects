@@ -1,17 +1,17 @@
-package ru.gb.oseminar.data;
+package data;
 
-import ru.gb.oseminar.data.Student;
+import data.User;
 
 import java.util.Comparator;
 
-public class StudentComparator implements Comparator<Student> {
+public class UserComaporator<T extends User> implements Comparator<T> {
     @Override
-    public int compare(Student o1, Student o2) {
+    public int compare(T o1, T o2) {
         int resultOfComparing = o1.getSecondName().compareTo(o2.getSecondName());
         if (resultOfComparing == 0) {
             resultOfComparing = o1.getFirstName().compareTo(o2.getFirstName());
             if (resultOfComparing == 0) {
-                return o1.getPatronymic().compareTo(o2.getPatronymic());
+                return o1.getLastName().compareTo(o2.getLastName());
             } else {
                 return resultOfComparing;
             }

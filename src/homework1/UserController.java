@@ -1,15 +1,12 @@
+package homework1;
 
-import ru.gb.oseminar.data.Student;
-import ru.gb.oseminar.data.StudentGroup;
-import ru.gb.oseminar.data.Teacher;
-import ru.gb.oseminar.data.User;
-import ru.gb.oseminar.service.DataService;
-import ru.gb.oseminar.service.StudentGroupService;
-import ru.gb.oseminar.view.UserView;
+import data.Student;
+import data.StudentGroup;
+import data.User;
+import view.UserView;
+import service.StudentGroupService;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class UserController {

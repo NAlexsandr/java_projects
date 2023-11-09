@@ -1,4 +1,5 @@
-import ru.gb.oseminar.data.StudentGroup;
+package homework1;
+import data.StudentGroup;
 import java.util.List;
 
 public class StreamStudentGroup implements Iterable<StudentGroup> {

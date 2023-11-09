@@ -1,4 +1,5 @@
-import ru.gb.oseminar.data.StudentGroup;
+package homework1;
+import data.StudentGroup;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,7 +21,7 @@ public class StreamService {
     }
     public List<StudentGroup> getSort(){
         List<StudentGroup> studentGroupList = new ArrayList<>(streamStudentGroup.getStreamStudentGroup());
-        Collections.sort(studentGroupList);
+        Collections.sort(Collections.unmodifiableList(studentGroupList));
         return studentGroupList;
     }
 }
