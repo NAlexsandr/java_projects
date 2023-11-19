@@ -53,9 +53,7 @@ public class DataService {
         }
         return null;
     }
-    public List<User> getAllUser(){
-        return userList;
-    }
+    public List<User> getAllUser(){return userList;}
 
     public List<User> getAllStudent(){
         List<User> resultList = new ArrayList<>();

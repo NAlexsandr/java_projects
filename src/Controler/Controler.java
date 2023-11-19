@@ -16,6 +16,10 @@ public class Controler {
                               String lastName, String dateB){
         service.create(firstName,secondName,lastName,dateB, Type.STUDENT);
     }
+    public void createTeacher(String firstName, String secondName,
+                              String lastName, String dateB){
+        service.create(firstName,secondName,lastName,dateB, Type.TEACHER);
+    }
 
     public void getAllStudent(){
         List<User> userList = service.getAllStudent();
